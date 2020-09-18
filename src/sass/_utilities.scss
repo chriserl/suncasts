@@ -1,4 +1,9 @@
 //Fonts
+@mixin h4 {
+  font-size: calc(#{$base-fontSize} * 1.24);
+  font-family: PoppinsSemiBold;
+}
+
 @mixin ph {
   font-size: calc(#{$base-fontSize} * 1.08);
   font-family: PoppinsReg;
