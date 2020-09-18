@@ -1,0 +1,29 @@
+//Media Queries
+
+//Big Smartphone devices
+@mixin phoneLg {
+  @media screen and (min-width: 414px) {
+    @content;
+  }
+}
+
+//Tablet devices
+@mixin tabScreen {
+  @media screen and (min-width: 600px) {
+    @content;
+  }
+}
+
+//Small screen laptops
+@mixin laptopSmall {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+//Large screen laptops
+@mixin laptopLarge {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
