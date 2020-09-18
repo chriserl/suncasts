@@ -1,3 +1,57 @@
+//Fonts
+@mixin ph {
+  font-size: calc(#{$base-fontSize} * 1.08);
+  font-family: PoppinsReg;
+}
+
+@mixin phb {
+  font-size: calc(#{$base-fontSize} * 1.08);
+  font-family: PoppinsMed;
+}
+
+@mixin pl {
+  font-size: $base-fontSize;
+  font-family: PoppinsReg;
+}
+
+@mixin plb {
+  font-size: $base-fontSize;
+  font-family: PoppinsMed;
+}
+
+@mixin ps {
+  font-size: calc(#{$base-fontSize} * 0.88);
+  font-family: PoppinsReg;
+}
+
+@mixin psb {
+  font-size: calc(#{$base-fontSize} * 0.88);
+  font-family: PoppinsMed;
+}
+
+@mixin px {
+  font-size: calc(#{$base-fontSize} * 0.8);
+  font-family: PoppinsReg;
+}
+
+@mixin pxb {
+  font-size: calc(#{$base-fontSize} * 0.8);
+  font-family: PoppinsMed;
+}
+
+//Flexbox
+@mixin flex($direction: null, $align-items: null, $justify-content: null) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+//Border
+@mixin lightBorder {
+  border: 1.24px solid #dbdbdb;
+}
+
 //Media Queries
 
 //Big Smartphone devices
@@ -26,4 +80,20 @@
   @media screen and (min-width: 1440px) {
     @content;
   }
+}
+
+//Hide Scrollbar
+@mixin hideScrollbar {
+  scrollbar-width: none;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+//Button
+@mixin button-plain {
+  border: none;
+  background: transparent;
 }
