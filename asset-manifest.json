@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/suncasts/static/css/main.870d2df9.chunk.css",
-    "main.js": "/suncasts/static/js/main.96bbe033.chunk.js",
-    "main.js.map": "/suncasts/static/js/main.96bbe033.chunk.js.map",
+    "main.css": "/suncasts/static/css/main.97d63f3a.chunk.css",
+    "main.js": "/suncasts/static/js/main.e6a02ebe.chunk.js",
+    "main.js.map": "/suncasts/static/js/main.e6a02ebe.chunk.js.map",
     "runtime-main.js": "/suncasts/static/js/runtime-main.829e3570.js",
     "runtime-main.js.map": "/suncasts/static/js/runtime-main.829e3570.js.map",
     "static/js/2.d26ebe02.chunk.js": "/suncasts/static/js/2.d26ebe02.chunk.js",
     "static/js/2.d26ebe02.chunk.js.map": "/suncasts/static/js/2.d26ebe02.chunk.js.map",
     "index.html": "/suncasts/index.html",
-    "precache-manifest.623a12a4bbea09c814c1d71063a76efc.js": "/suncasts/precache-manifest.623a12a4bbea09c814c1d71063a76efc.js",
+    "precache-manifest.ac87bddc1e8dce45c30a5ecb871324a9.js": "/suncasts/precache-manifest.ac87bddc1e8dce45c30a5ecb871324a9.js",
     "service-worker.js": "/suncasts/service-worker.js",
-    "static/css/main.870d2df9.chunk.css.map": "/suncasts/static/css/main.870d2df9.chunk.css.map",
+    "static/css/main.97d63f3a.chunk.css.map": "/suncasts/static/css/main.97d63f3a.chunk.css.map",
     "static/js/2.d26ebe02.chunk.js.LICENSE.txt": "/suncasts/static/js/2.d26ebe02.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/suncasts/static/media/Poppins-SemiBold.342ba3d8.ttf",
     "static/media/backwardicon.svg": "/suncasts/static/media/backwardicon.f73d3d66.svg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.829e3570.js",
     "static/js/2.d26ebe02.chunk.js",
-    "static/css/main.870d2df9.chunk.css",
-    "static/js/main.96bbe033.chunk.js"
+    "static/css/main.97d63f3a.chunk.css",
+    "static/js/main.e6a02ebe.chunk.js"
   ]
 }
