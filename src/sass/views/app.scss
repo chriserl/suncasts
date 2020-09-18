@@ -1,0 +1,60 @@
+//imports
+@import "../variables";
+@import "../utilities";
+
+.app {
+  width: 100vw;
+
+  aside {
+    position: fixed;
+    height: 100vh;
+    overflow-y: scroll;
+    z-index: 999;
+    width: 80%;
+    border-right: 1.6px solid #dbdbdb;
+    //background-color: whitesmoke;
+    @include flex(column);
+    @include hideScrollbar;
+    @include phoneLg {
+      width: 72%;
+    }
+    @include tabScreen {
+      width: 16rem;
+    }
+
+    nav {
+      margin-top: $space-2;
+      width: 100%;
+      text-align: center;
+
+      .brand {
+        @include phb;
+        text-decoration: none;
+        color: $prim-color;
+      }
+    }
+
+    .playlist {
+      margin-top: $space-8;
+      padding: 0 0 0 $space-6;
+
+      .section-title {
+        @include ps;
+        margin-bottom: $space-2;
+        color: $gray-1;
+      }
+
+      .playlist-item {
+        @include px;
+        padding-left: $space-1;
+        list-style-type: none;
+        color: $gray-2;
+      }
+    }
+
+    .player-area {
+      width: 92%;
+      margin: auto auto $space-3 auto;
+    }
+  }
+}
