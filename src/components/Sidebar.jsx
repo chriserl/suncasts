@@ -1,11 +1,12 @@
 import React from "react";
+import "../sass/components/sidebar.scss";
 import playIcon from "../assets/icons/play.svg";
 import forwardIcon from "../assets/icons/forwardicon.svg";
 import backwardIcon from "../assets/icons/backwardicon.svg";
 
 const Sidebar = () => {
   return (
-    <aside>
+    <aside className="sidebar">
       <nav>
         <a href="./" className="brand">
           Suncasts.
