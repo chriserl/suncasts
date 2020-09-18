@@ -1,0 +1,53 @@
+//Podcast Player
+.podcast-player {
+  width: 100%;
+  padding: $space-3 0;
+  padding-bottom: $space-1;
+  text-align: center;
+  border-radius: $space-1;
+  background-color: white;
+  @include lightBorder;
+
+  .episode-name {
+    @include pl;
+    color: $black;
+  }
+
+  .channel-name {
+    @include ps;
+    margin: $space-1 0;
+    color: $gray-1;
+  }
+
+  .time-remaining {
+    @include pxb;
+    color: $black;
+  }
+
+  hr {
+    margin: $space-2 0 $space-1 0;
+    opacity: 0.4;
+  }
+
+  audio {
+    width: 100%;
+  }
+
+  .audio-controls {
+    width: 48%;
+    margin: 0 auto;
+    @include flex(row, center, space-between);
+
+    button {
+      @include button-plain;
+
+      .control-icon {
+        width: $base-spaceSize;
+      }
+
+      .play-icon {
+        width: $space-4;
+      }
+    }
+  }
+}
