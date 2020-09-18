@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/suncasts/static/css/main.2ae31e30.chunk.css",
+    "main.js": "/suncasts/static/js/main.c4a0a03a.chunk.js",
+    "main.js.map": "/suncasts/static/js/main.c4a0a03a.chunk.js.map",
+    "runtime-main.js": "/suncasts/static/js/runtime-main.829e3570.js",
+    "runtime-main.js.map": "/suncasts/static/js/runtime-main.829e3570.js.map",
+    "static/js/2.5ce9f090.chunk.js": "/suncasts/static/js/2.5ce9f090.chunk.js",
+    "static/js/2.5ce9f090.chunk.js.map": "/suncasts/static/js/2.5ce9f090.chunk.js.map",
+    "index.html": "/suncasts/index.html",
+    "precache-manifest.1a5c4d77649ad1adddd4413f05184b9b.js": "/suncasts/precache-manifest.1a5c4d77649ad1adddd4413f05184b9b.js",
+    "service-worker.js": "/suncasts/service-worker.js",
+    "static/css/main.2ae31e30.chunk.css.map": "/suncasts/static/css/main.2ae31e30.chunk.css.map",
+    "static/js/2.5ce9f090.chunk.js.LICENSE.txt": "/suncasts/static/js/2.5ce9f090.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.829e3570.js",
+    "static/js/2.5ce9f090.chunk.js",
+    "static/css/main.2ae31e30.chunk.css",
+    "static/js/main.c4a0a03a.chunk.js"
+  ]
+}
