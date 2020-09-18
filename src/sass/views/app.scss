@@ -4,10 +4,11 @@
 
 .app {
   width: 100vw;
+  height: 100vh;
 
   aside {
     position: fixed;
-    height: 100vh;
+    height: 100%;
     overflow-y: scroll;
     z-index: 999;
     width: 80%;
