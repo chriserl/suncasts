@@ -1,3 +1,21 @@
+//Colors
+$prim-color: #0081ca;
+$black: #050505;
+$gray-1: #727272;
+$gray-2: #858585;
+$gray-3: #adadad;
+
 $base-fontSize: 1rem; //Base font size
 
+//Spacing
 $base-spaceSize: calc(1rem + 0.8px); //Base space size
+$space-1: calc(#{$base-spaceSize} * 0.5);
+$space-2: calc(#{$base-spaceSize} * 1.25);
+$space-3: calc(#{$base-spaceSize} * 1.5);
+$space-4: calc(#{$base-spaceSize} * 1.75);
+$space-5: calc(#{$base-spaceSize} * 2);
+$space-6: calc(#{$base-spaceSize} * 2.25);
+$space-7: calc(#{$base-spaceSize} * 2.5);
+$space-8: calc(#{$base-spaceSize} * 2.75);
+$space-9: calc(#{$base-spaceSize} * 3);
+$space-10: calc(#{$base-spaceSize} * 3.25);
