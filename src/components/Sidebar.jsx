@@ -29,7 +29,7 @@ const Sidebar = () => {
           <div className="audio-controls">
             <button className="backward-btn">
               <img
-                src={backwardIcon}
+                src={forwardIcon}
                 className="control-icon backward"
                 alt="backward"
               />
@@ -43,7 +43,7 @@ const Sidebar = () => {
             </button>
             <button className="forward-btn">
               <img
-                src={forwardIcon}
+                src={backwardIcon}
                 className="control-icon forward"
                 alt="forward"
               />

@@ -12,7 +12,6 @@
     z-index: 999;
     width: 80%;
     border-right: 1.6px solid #dbdbdb;
-    //background-color: whitesmoke;
     @include flex(column);
     @include hideScrollbar;
     @include phoneLg {
@@ -54,7 +53,7 @@
 
     .player-area {
       width: 92%;
-      margin: auto auto $space-3 auto;
+      margin: auto auto $space-6 auto;
     }
   }
 }
