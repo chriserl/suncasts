@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3fcdacaf10277526ef4472d28038c39c",
+    "revision": "d187c25a994ef170fac8caa1e8b483ef",
     "url": "/suncasts/index.html"
   },
   {
-    "revision": "f3ac62a375e862e2c7e9",
-    "url": "/suncasts/static/css/main.54edd872.chunk.css"
+    "revision": "772931eb5667adfeb6b6",
+    "url": "/suncasts/static/css/main.87c7baa3.chunk.css"
   },
   {
     "revision": "7d6df3f31d9d508e4dbb",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/suncasts/static/js/2.d26ebe02.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f3ac62a375e862e2c7e9",
-    "url": "/suncasts/static/js/main.e6a02ebe.chunk.js"
+    "revision": "772931eb5667adfeb6b6",
+    "url": "/suncasts/static/js/main.acc4a09c.chunk.js"
   },
   {
     "revision": "91e545c12309f0a592c8",
