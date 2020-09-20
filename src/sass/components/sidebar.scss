@@ -66,4 +66,8 @@
 
 .sidenav-closed {
   @include dNone;
+
+  @include tabScreen {
+    display: flex;
+  }
 }
