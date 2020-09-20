@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/suncasts/static/css/main.fa2e6cd4.chunk.css",
-    "main.js": "/suncasts/static/js/main.acc4a09c.chunk.js",
-    "main.js.map": "/suncasts/static/js/main.acc4a09c.chunk.js.map",
+    "main.css": "/suncasts/static/css/main.c38168c7.chunk.css",
+    "main.js": "/suncasts/static/js/main.d44d8517.chunk.js",
+    "main.js.map": "/suncasts/static/js/main.d44d8517.chunk.js.map",
     "runtime-main.js": "/suncasts/static/js/runtime-main.829e3570.js",
     "runtime-main.js.map": "/suncasts/static/js/runtime-main.829e3570.js.map",
-    "static/js/2.d26ebe02.chunk.js": "/suncasts/static/js/2.d26ebe02.chunk.js",
-    "static/js/2.d26ebe02.chunk.js.map": "/suncasts/static/js/2.d26ebe02.chunk.js.map",
+    "static/js/2.7d1fcc94.chunk.js": "/suncasts/static/js/2.7d1fcc94.chunk.js",
+    "static/js/2.7d1fcc94.chunk.js.map": "/suncasts/static/js/2.7d1fcc94.chunk.js.map",
     "index.html": "/suncasts/index.html",
-    "precache-manifest.c26d498fbeaa19e49eade18a6e356c30.js": "/suncasts/precache-manifest.c26d498fbeaa19e49eade18a6e356c30.js",
+    "precache-manifest.bcd103267e9ae1e98b78859509001e57.js": "/suncasts/precache-manifest.bcd103267e9ae1e98b78859509001e57.js",
     "service-worker.js": "/suncasts/service-worker.js",
-    "static/css/main.fa2e6cd4.chunk.css.map": "/suncasts/static/css/main.fa2e6cd4.chunk.css.map",
-    "static/js/2.d26ebe02.chunk.js.LICENSE.txt": "/suncasts/static/js/2.d26ebe02.chunk.js.LICENSE.txt",
+    "static/css/main.c38168c7.chunk.css.map": "/suncasts/static/css/main.c38168c7.chunk.css.map",
+    "static/js/2.7d1fcc94.chunk.js.LICENSE.txt": "/suncasts/static/js/2.7d1fcc94.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/suncasts/static/media/Poppins-SemiBold.342ba3d8.ttf",
     "static/media/backwardicon.svg": "/suncasts/static/media/backwardicon.f73d3d66.svg",
+    "static/media/close.svg": "/suncasts/static/media/close.cad70081.svg",
     "static/media/forwardicon.svg": "/suncasts/static/media/forwardicon.c9388aea.svg",
     "static/media/play.svg": "/suncasts/static/media/play.a3a660e5.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.829e3570.js",
-    "static/js/2.d26ebe02.chunk.js",
-    "static/css/main.fa2e6cd4.chunk.css",
-    "static/js/main.acc4a09c.chunk.js"
+    "static/js/2.7d1fcc94.chunk.js",
+    "static/css/main.c38168c7.chunk.css",
+    "static/js/main.d44d8517.chunk.js"
   ]
 }

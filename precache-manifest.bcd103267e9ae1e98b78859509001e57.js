@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "207282715cb2b52a187107f9ed5d46b0",
+    "revision": "037a70e2028a9aa112ef077c033f8c73",
     "url": "/suncasts/index.html"
   },
   {
-    "revision": "92ae3bbb71ddcf05fb52",
-    "url": "/suncasts/static/css/main.fa2e6cd4.chunk.css"
+    "revision": "bbc5d2a8b2eddd9369ef",
+    "url": "/suncasts/static/css/main.c38168c7.chunk.css"
   },
   {
-    "revision": "7d6df3f31d9d508e4dbb",
-    "url": "/suncasts/static/js/2.d26ebe02.chunk.js"
+    "revision": "ebeed2cd3e870e0aceaf",
+    "url": "/suncasts/static/js/2.7d1fcc94.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/suncasts/static/js/2.d26ebe02.chunk.js.LICENSE.txt"
+    "url": "/suncasts/static/js/2.7d1fcc94.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "92ae3bbb71ddcf05fb52",
-    "url": "/suncasts/static/js/main.acc4a09c.chunk.js"
+    "revision": "bbc5d2a8b2eddd9369ef",
+    "url": "/suncasts/static/js/main.d44d8517.chunk.js"
   },
   {
     "revision": "91e545c12309f0a592c8",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f73d3d66a38f92f6c3841d3d3faeacd4",
     "url": "/suncasts/static/media/backwardicon.f73d3d66.svg"
+  },
+  {
+    "revision": "cad7008135a58fda8ec20be42808a6b2",
+    "url": "/suncasts/static/media/close.cad70081.svg"
   },
   {
     "revision": "c9388aea2924428c91fc4477d4198250",
