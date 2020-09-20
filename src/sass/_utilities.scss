@@ -1,4 +1,9 @@
 //Fonts
+@mixin h1 {
+  font-size: calc(#{$base-fontSize} * 2.4);
+  font-family: PoppinsSemiBold;
+}
+
 @mixin h3 {
   font-size: calc(#{$base-fontSize} * 1.32);
   font-family: PoppinsSemiBold;
@@ -47,6 +52,12 @@
 @mixin pxb {
   font-size: calc(#{$base-fontSize} * 0.8);
   font-family: PoppinsMed;
+}
+
+//Roboto
+@mixin Rh1 {
+  font-size: calc(#{$base-fontSize} * 2);
+  font-family: RobotoSemiBold;
 }
 
 //Flexbox

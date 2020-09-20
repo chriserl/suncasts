@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import Sidebar from "./components/Sidebar";
+import Home from "./views/Home";
 import "./sass/views/app.scss";
 
 const App = () => {
-  let [sidenavState, setSidenavState] = useState(() => "sidenav-opened");
+  let [sidenavState, setSidenavState] = useState(() => "sidenav-closed");
   return (
     <div className="app">
       <Sidebar
         sidenavVisibility={sidenavState}
-        closeSidenav={() => setSidenavState("sidenav-closed")}
+        closeSidenav={() => setSidenavState("sidenav-opened")}
       />
-      <main></main>
+      <main>
+        <Home />
+      </main>
     </div>
   );
 };

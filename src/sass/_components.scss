@@ -64,3 +64,13 @@
     display: block;
   }
 }
+
+//Searchbar
+.searchBar {
+  @include ps;
+  padding: 0.28rem $space-3;
+  width: 100%;
+  border-radius: $space-4;
+  border: 1.8px solid $border-gray;
+  background-color: $gray-4;
+}

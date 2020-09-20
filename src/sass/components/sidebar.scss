@@ -4,6 +4,8 @@
 
 .sidebar {
   position: fixed;
+  z-index: 1;
+  background-color: #ffffff;
   height: 100%;
   overflow-y: scroll;
   width: 80%;

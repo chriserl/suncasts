@@ -15,6 +15,7 @@
 }
 
 //Fonts
+//Poppins
 @font-face {
   font-family: PoppinsReg;
   src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
@@ -28,6 +29,22 @@
 @font-face {
   font-family: PoppinsSemiBold;
   src: url("../assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+//Roboto
+@font-face {
+  font-family: RobotoReg;
+  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: RobotoMed;
+  src: url("../assets/fonts/Roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: RobotoSemiBold;
+  src: url("../assets/fonts/Roboto/Roboto-Bold.ttf");
 }
 
 //Root font family
