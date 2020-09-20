@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/suncasts/static/css/main.c38168c7.chunk.css",
+    "main.css": "/suncasts/static/css/main.04f777ee.chunk.css",
     "main.js": "/suncasts/static/js/main.d44d8517.chunk.js",
     "main.js.map": "/suncasts/static/js/main.d44d8517.chunk.js.map",
     "runtime-main.js": "/suncasts/static/js/runtime-main.829e3570.js",
@@ -8,9 +8,9 @@
     "static/js/2.7d1fcc94.chunk.js": "/suncasts/static/js/2.7d1fcc94.chunk.js",
     "static/js/2.7d1fcc94.chunk.js.map": "/suncasts/static/js/2.7d1fcc94.chunk.js.map",
     "index.html": "/suncasts/index.html",
-    "precache-manifest.bcd103267e9ae1e98b78859509001e57.js": "/suncasts/precache-manifest.bcd103267e9ae1e98b78859509001e57.js",
+    "precache-manifest.687eb2b5b7d2d4764c139c1079421f8b.js": "/suncasts/precache-manifest.687eb2b5b7d2d4764c139c1079421f8b.js",
     "service-worker.js": "/suncasts/service-worker.js",
-    "static/css/main.c38168c7.chunk.css.map": "/suncasts/static/css/main.c38168c7.chunk.css.map",
+    "static/css/main.04f777ee.chunk.css.map": "/suncasts/static/css/main.04f777ee.chunk.css.map",
     "static/js/2.7d1fcc94.chunk.js.LICENSE.txt": "/suncasts/static/js/2.7d1fcc94.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/suncasts/static/media/Poppins-SemiBold.342ba3d8.ttf",
     "static/media/backwardicon.svg": "/suncasts/static/media/backwardicon.f73d3d66.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.829e3570.js",
     "static/js/2.7d1fcc94.chunk.js",
-    "static/css/main.c38168c7.chunk.css",
+    "static/css/main.04f777ee.chunk.css",
     "static/js/main.d44d8517.chunk.js"
   ]
 }
