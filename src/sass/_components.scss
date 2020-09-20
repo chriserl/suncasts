@@ -1,3 +1,10 @@
+//Brand
+.brand {
+  @include h3;
+  text-decoration: none;
+  color: $prim-color;
+}
+
 //Podcast Player
 .podcast-player {
   width: 100%;
@@ -65,12 +72,62 @@
   }
 }
 
-//Searchbar
-.searchBar {
+.hamburger-btn {
+  @include flex(row, center, space-between);
+  @include button-plain;
   @include ps;
-  padding: 0.28rem $space-3;
-  width: 100%;
+  background-color: $gray-4;
+  padding: 0.48rem 1.24rem;
+  border-radius: $space-5;
+
+  .hamburger-icon {
+    width: 0.96rem;
+    margin-right: $space-1;
+  }
+}
+
+//Searchbar
+.form-control {
+  @include flex(row, center);
   border-radius: $space-4;
   border: 1.8px solid $border-gray;
   background-color: $gray-4;
+  padding: 0.4rem $base-spaceSize;
+
+  .search-icon {
+    width: $base-spaceSize;
+  }
+
+  .searchBar {
+    @include pl;
+    width: 100%;
+    background: transparent;
+    border: none;
+    margin-left: $base-spaceSize;
+    color: $black;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+      @include ps;
+    }
+
+    &::-moz-placeholder {
+      @include ps;
+    }
+
+    &:-ms-input-placeholder {
+      @include ps;
+    }
+
+    &::-ms-input-placeholder {
+      @include ps;
+    }
+
+    &::placeholder {
+      @include ps;
+    }
+  }
 }

@@ -9,10 +9,13 @@ const App = () => {
     <div className="app">
       <Sidebar
         sidenavVisibility={sidenavState}
-        closeSidenav={() => setSidenavState("sidenav-opened")}
+        closeSidenav={() => setSidenavState("sidenav-closed")}
       />
       <main>
-        <Home />
+        <Home
+          sidenavVisibility={sidenavState}
+          closeSidenav={() => setSidenavState("sidenav-opened")}
+        />
       </main>
     </div>
   );

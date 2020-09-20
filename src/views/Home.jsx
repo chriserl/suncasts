@@ -4,18 +4,35 @@ import channel01 from "../assets/images/mainpod01.jpg";
 import channel02 from "../assets/images/mainpod02.jpg";
 import channel03 from "../assets/images/mainpod03.png";
 import channel04 from "../assets/images/mainpod04.jpeg";
+import searchIcon from "../assets/icons/search.svg";
+import menuIcon from "../assets/icons/menu.svg";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <div id="home">
       <section className="nav">
+        <div className="nav-header">
+          <a href="./" className="brand">
+            Suncasts.
+          </a>
+          <button onClick={props.closeSidenav} className="hamburger-btn">
+            <img
+              src={menuIcon}
+              alt="playlist and audio player"
+              className="hamburger-icon"
+            />
+            <p className="menu-text">Player</p>
+          </button>
+        </div>
         <form className="nav-search">
           <div className="form-control">
+            <img src={searchIcon} alt="search" className="search-icon" />
             <input
               type="search"
               name="searchPodcast"
               className="searchBar"
               id="searchPodcast"
+              placeholder="search"
             />
           </div>
         </form>

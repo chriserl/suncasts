@@ -9,8 +9,25 @@
     width: 100%;
     margin-bottom: $space-7;
 
+    .nav-header {
+      @include flex(row, center, space-between);
+      width: 100%;
+      margin-bottom: $space-4;
+
+      @include tabScreen {
+        display: none;
+      }
+    }
+
     form {
-      width: 72%;
+      width: 100%;
+      margin-left: auto;
+      margin-right: $space-1;
+
+      @include tabScreen {
+        width: 32%;
+        margin-right: $space-8;
+      }
 
       input {
         width: 100%;
@@ -57,11 +74,12 @@
     }
 
     .link-item {
-      @include pl;
+      @include ps;
       margin: auto 0 $space-4 0;
 
       a {
         text-decoration: none;
+        color: $prim-color;
       }
     }
   }
