@@ -51,3 +51,12 @@
     }
   }
 }
+
+//Buttons
+.icon-btn {
+  @include button-plain;
+
+  img {
+    width: 0.8rem;
+  }
+}

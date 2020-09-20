@@ -52,6 +52,11 @@
   justify-content: $justify-content;
 }
 
+//Display none
+@mixin dNone {
+  display: none;
+}
+
 //Border
 @mixin lightBorder {
   border: 1.24px solid #dbdbdb;

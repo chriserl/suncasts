@@ -3,17 +3,21 @@ import "../sass/components/sidebar.scss";
 import playIcon from "../assets/icons/play.svg";
 import forwardIcon from "../assets/icons/forwardicon.svg";
 import backwardIcon from "../assets/icons/backwardicon.svg";
+import closeIcon from "../assets/icons/close.svg";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
   return (
-    <aside className="sidebar">
+    <aside className={`sidebar ${props.sidenavVisibility}`}>
       <nav>
+        <button onClick={props.closeSidenav} className="close-btn icon-btn">
+          <img src={closeIcon} alt="close menu" />
+        </button>
         <a href="./" className="brand">
           Suncasts.
         </a>
       </nav>
       <section className="playlist">
-        <h5 className="section-title">Playlist</h5>
+        <p className="section-title">Playlist</p>
         <ul className="playlist-items">
           <li className="playlist-item">
             <p>Select any episode to play</p>

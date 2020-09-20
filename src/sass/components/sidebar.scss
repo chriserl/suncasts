@@ -6,7 +6,6 @@
   position: fixed;
   height: 100%;
   overflow-y: scroll;
-  z-index: 999;
   width: 80%;
   border-right: 1.6px solid #dbdbdb;
   @include flex(column);
@@ -23,6 +22,15 @@
     width: 100%;
     text-align: center;
 
+    .close-btn {
+      display: block;
+      margin: 0 $space-3 $space-1 auto;
+
+      @include tabScreen {
+        @include dNone;
+      }
+    }
+
     .brand {
       @include h4;
       text-decoration: none;
@@ -37,14 +45,14 @@
     .section-title {
       @include ps;
       margin-bottom: $space-2;
-      color: $gray-1;
+      color: $gray-2;
     }
 
     .playlist-item {
       @include px;
       padding-left: $space-1;
       list-style-type: none;
-      color: $gray-2;
+      color: $gray-3;
     }
   }
 
@@ -52,4 +60,8 @@
     width: 92%;
     margin: auto auto $space-6 auto;
   }
+}
+
+.sidenav-closed {
+  @include dNone;
 }
