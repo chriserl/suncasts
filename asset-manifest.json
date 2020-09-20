@@ -1,27 +1,31 @@
 {
   "files": {
-    "main.css": "/suncasts/static/css/main.04f777ee.chunk.css",
-    "main.js": "/suncasts/static/js/main.d44d8517.chunk.js",
-    "main.js.map": "/suncasts/static/js/main.d44d8517.chunk.js.map",
+    "main.css": "/suncasts/static/css/main.90023bb9.chunk.css",
+    "main.js": "/suncasts/static/js/main.7a78de9f.chunk.js",
+    "main.js.map": "/suncasts/static/js/main.7a78de9f.chunk.js.map",
     "runtime-main.js": "/suncasts/static/js/runtime-main.829e3570.js",
     "runtime-main.js.map": "/suncasts/static/js/runtime-main.829e3570.js.map",
-    "static/js/2.7d1fcc94.chunk.js": "/suncasts/static/js/2.7d1fcc94.chunk.js",
-    "static/js/2.7d1fcc94.chunk.js.map": "/suncasts/static/js/2.7d1fcc94.chunk.js.map",
+    "static/js/2.d2c1c68f.chunk.js": "/suncasts/static/js/2.d2c1c68f.chunk.js",
+    "static/js/2.d2c1c68f.chunk.js.map": "/suncasts/static/js/2.d2c1c68f.chunk.js.map",
     "index.html": "/suncasts/index.html",
-    "precache-manifest.687eb2b5b7d2d4764c139c1079421f8b.js": "/suncasts/precache-manifest.687eb2b5b7d2d4764c139c1079421f8b.js",
+    "precache-manifest.686dbbe79ccd0427fd90f3f42dca2227.js": "/suncasts/precache-manifest.686dbbe79ccd0427fd90f3f42dca2227.js",
     "service-worker.js": "/suncasts/service-worker.js",
-    "static/css/main.04f777ee.chunk.css.map": "/suncasts/static/css/main.04f777ee.chunk.css.map",
-    "static/js/2.7d1fcc94.chunk.js.LICENSE.txt": "/suncasts/static/js/2.7d1fcc94.chunk.js.LICENSE.txt",
-    "static/media/main.scss": "/suncasts/static/media/Poppins-SemiBold.342ba3d8.ttf",
+    "static/css/main.90023bb9.chunk.css.map": "/suncasts/static/css/main.90023bb9.chunk.css.map",
+    "static/js/2.d2c1c68f.chunk.js.LICENSE.txt": "/suncasts/static/js/2.d2c1c68f.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/suncasts/static/media/Roboto-Regular.11eabca2.ttf",
     "static/media/backwardicon.svg": "/suncasts/static/media/backwardicon.f73d3d66.svg",
     "static/media/close.svg": "/suncasts/static/media/close.cad70081.svg",
     "static/media/forwardicon.svg": "/suncasts/static/media/forwardicon.c9388aea.svg",
-    "static/media/play.svg": "/suncasts/static/media/play.a3a660e5.svg"
+    "static/media/mainpod01.jpg": "/suncasts/static/media/mainpod01.e3fecb01.jpg",
+    "static/media/mainpod02.jpg": "/suncasts/static/media/mainpod02.52d0de9d.jpg",
+    "static/media/menu.svg": "/suncasts/static/media/menu.4a9a687c.svg",
+    "static/media/play.svg": "/suncasts/static/media/play.a3a660e5.svg",
+    "static/media/search.svg": "/suncasts/static/media/search.5222ebbd.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.829e3570.js",
-    "static/js/2.7d1fcc94.chunk.js",
-    "static/css/main.04f777ee.chunk.css",
-    "static/js/main.d44d8517.chunk.js"
+    "static/js/2.d2c1c68f.chunk.js",
+    "static/css/main.90023bb9.chunk.css",
+    "static/js/main.7a78de9f.chunk.js"
   ]
 }
