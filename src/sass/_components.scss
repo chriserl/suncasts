@@ -55,8 +55,12 @@
 //Buttons
 .icon-btn {
   @include button-plain;
+  background-color: $gray-4;
+  padding: 0.48rem;
+  border-radius: 50%;
 
   img {
-    width: 0.8rem;
+    width: 0.64rem;
+    display: block;
   }
 }
