@@ -32,7 +32,7 @@
     }
 
     .brand {
-      @include h4;
+      @include h3;
       text-decoration: none;
       color: $prim-color;
     }
