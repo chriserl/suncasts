@@ -20,7 +20,7 @@
   }
 
   nav {
-    margin-top: $space-2;
+    margin-top: $space-5;
     width: 100%;
     text-align: center;
 
@@ -29,7 +29,7 @@
       margin: 0 $space-3 $space-1 auto;
 
       @include tabScreen {
-        @include dNone;
+        @include d-none;
       }
     }
 
@@ -40,24 +40,6 @@
     }
   }
 
-  .playlist {
-    margin-top: $space-8;
-    padding: 0 0 0 $space-6;
-
-    .section-title {
-      @include ps;
-      margin-bottom: $space-2;
-      color: $gray-2;
-    }
-
-    .playlist-item {
-      @include px;
-      padding-left: $space-1;
-      list-style-type: none;
-      color: $gray-3;
-    }
-  }
-
   .player-area {
     width: 92%;
     margin: auto auto $space-6 auto;
@@ -65,7 +47,7 @@
 }
 
 .sidenav-closed {
-  @include dNone;
+  @include d-none;
 
   @include tabScreen {
     display: flex;

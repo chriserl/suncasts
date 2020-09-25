@@ -10,7 +10,7 @@
   font-size: calc(14px + 0.8vw);
 
   @media screen and (min-width: 600px) {
-    font-size: calc(14px + 0.16vw);
+    font-size: calc(14px + 0.096vw);
   }
 }
 
@@ -31,20 +31,25 @@
   src: url("../assets/fonts/Poppins/Poppins-SemiBold.ttf");
 }
 
+@font-face {
+  font-family: PoppinsBold;
+  src: url("../assets/fonts/Poppins/Poppins-Bold.ttf");
+}
+
 //Roboto
 @font-face {
-  font-family: RobotoReg;
-  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf");
+  font-family: IBMReg;
+  src: url("../assets/fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf");
 }
 
 @font-face {
-  font-family: RobotoMed;
-  src: url("../assets/fonts/Roboto/Roboto-Medium.ttf");
+  font-family: IBMMed;
+  src: url("../assets/fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf");
 }
 
 @font-face {
-  font-family: RobotoSemiBold;
-  src: url("../assets/fonts/Roboto/Roboto-Bold.ttf");
+  font-family: IBMSemiBold;
+  src: url("../assets/fonts/IBM_Plex_Sans/IBMPlexSans-SemiBold.ttf");
 }
 
 //Root font family

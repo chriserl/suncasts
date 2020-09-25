@@ -1,11 +1,35 @@
 import React from "react";
+import PodcastCategory from "../components/PodcastCategory";
 import "../sass/views/home.scss";
-import channel01 from "../assets/images/mainpod01.jpg";
-import channel02 from "../assets/images/mainpod02.jpg";
-import channel03 from "../assets/images/mainpod03.png";
-import channel04 from "../assets/images/mainpod04.jpeg";
-import searchIcon from "../assets/icons/search.svg";
 import menuIcon from "../assets/icons/menu.svg";
+import featuredPodcastImage from "../assets/images/codenewbie.png";
+
+const FeaturedPod = () => {
+  return (
+    <section className="featured-podcast">
+      <img
+        src={featuredPodcastImage}
+        alt="podcast channel"
+        className="channel-image"
+      />
+      <div className="card-content">
+        <div className="podcast-info">
+          <p className="podcast-channel">Codenewbie</p>
+          <p className="podcast-title">
+            Getting Started with Machine Learning and AI
+          </p>
+          <div className="podcast-details">
+            <p className="time-released">
+              <span>2</span> days ago
+            </p>
+            <p className="duration">22 mins</p>
+          </div>
+        </div>
+        <button className="play-button">play</button>
+      </div>
+    </section>
+  );
+};
 
 const Home = (props) => {
   return (
@@ -21,55 +45,23 @@ const Home = (props) => {
               alt="playlist and audio player"
               className="hamburger-icon"
             />
-            <p className="menu-text">Player</p>
           </button>
         </div>
         <form className="nav-search">
           <div className="form-control">
-            <img src={searchIcon} alt="search" className="search-icon" />
             <input
               type="search"
               name="searchPodcast"
               className="searchBar"
               id="searchPodcast"
-              placeholder="search"
+              placeholder="search ..."
+              autoComplete="off"
             />
           </div>
         </form>
       </section>
-      <div className="intro-texts">
-        <p className="main-text">
-          Resounding <span>Podcasts</span>
-        </p>
-        <p className="aux-main">for the discerning listener</p>
-      </div>
-      <ul className="channels">
-        <li className="channel-item">
-          <a href="./" className="channel-link">
-            <img src={channel01} alt="" />
-          </a>
-        </li>
-        <li className="channel-item">
-          <a href="./" className="channel-link">
-            <img src={channel02} alt="" />
-          </a>
-        </li>
-        <li className="channel-item">
-          <a href="./" className="channel-link">
-            <img src={channel03} alt="" />
-          </a>
-        </li>
-        <li className="channel-item">
-          <a href="./" className="channel-link">
-            <img src={channel04} alt="" />
-          </a>
-        </li>
-        <li className="channel-item link-item">
-          <a href="./" className="browse-link">
-            browse channels
-          </a>
-        </li>
-      </ul>
+      <FeaturedPod />
+      <PodcastCategory />
     </div>
   );
 };

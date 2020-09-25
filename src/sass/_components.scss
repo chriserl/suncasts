@@ -1,132 +1,160 @@
 //Brand
 .brand {
-  @include h3;
+  @include h4;
   text-decoration: none;
   color: $prim-color;
 }
 
-//Podcast Player
-.podcast-player {
-  width: 100%;
-  padding: $space-3 0;
-  padding-bottom: $space-1;
-  text-align: center;
-  border-radius: $space-1;
-  background-color: white;
-  @include lightBorder;
+#account-prompt {
+  width: 80%;
+  margin: $space-9 auto 0;
+  @include flex(column, center);
 
-  .episode-name {
-    @include pl;
-    color: $black;
+  .login-text {
+    text-align: center;
+    margin-top: $space-3;
+    margin-bottom: $space-6;
+
+    .login-prompt {
+      @include pl;
+      margin-bottom: $space-2;
+      color: $black;
+    }
+
+    .login-aux {
+      @include ps;
+      color: $gray-1;
+    }
   }
 
-  .channel-name {
-    @include ps;
-    margin: $space-1 0;
-    color: $gray-1;
-  }
+  .login-btn {
+    cursor: pointer;
+    border-radius: $space-3;
+    padding: $space-1 $space-3;
 
-  .time-remaining {
-    @include pxb;
-    color: $black;
-  }
-
-  hr {
-    margin: $space-2 0 $space-1 0;
-    opacity: 0.4;
-  }
-
-  audio {
-    width: 100%;
-  }
-
-  .audio-controls {
-    width: 48%;
-    margin: 0 auto;
-    @include flex(row, center, space-between);
-
-    button {
-      @include button-plain;
-
-      .control-icon {
-        width: $base-spaceSize;
-      }
-
-      .play-icon {
-        width: $space-4;
-      }
+    img {
+      margin-right: $space-1;
     }
   }
 }
 
 //Buttons
 .icon-btn {
+  @include flex(row, center);
   @include button-plain;
   background-color: $gray-4;
-  padding: 0.48rem;
-  border-radius: 50%;
 
   img {
-    width: 0.64rem;
+    width: $space-4;
     display: block;
   }
 }
 
 .hamburger-btn {
-  @include flex(row, center, space-between);
+  @include flex(row, center);
   @include button-plain;
-  @include ps;
-  background-color: $gray-4;
-  padding: 0.48rem 1.24rem;
-  border-radius: $space-5;
 
   .hamburger-icon {
-    width: 0.96rem;
-    margin-right: $space-1;
+    width: 1.16rem;
   }
 }
 
 //Searchbar
 .form-control {
-  @include flex(row, center);
-  border-radius: $space-4;
-  background-color: $gray-4;
-  padding: 0.8rem $base-spaceSize;
-
-  .search-icon {
-    width: $base-spaceSize;
-  }
-
   .searchBar {
-    @include pl;
+    @include ps;
+    border-radius: $space-1;
+    background-color: #f4f7f2;
+    padding: 0.8rem $base-spaceSize;
     width: 100%;
-    background: transparent;
     border: none;
-    margin-left: $base-spaceSize;
+    margin-left: $space-1;
     color: $black;
 
     &:focus {
       outline: none;
+      //outline-color: #94ac80;
+      background-color: white;
     }
 
     &::-webkit-input-placeholder {
       @include ps;
-    }
-
-    &::-moz-placeholder {
-      @include ps;
+      color: #94ac80;
     }
 
     &:-ms-input-placeholder {
       @include ps;
+      color: #94ac80;
     }
 
     &::-ms-input-placeholder {
       @include ps;
+      color: #94ac80;
     }
 
     &::placeholder {
       @include ps;
+      color: #94ac80;
+    }
+  }
+}
+
+.featured-podcast {
+  @include tabScreen {
+    @include flex(row, flex-start);
+  }
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: 14rem;
+    border-radius: $space-4;
+    margin-bottom: $space-4;
+
+    @include tabScreen {
+      margin-right: $space-6;
+      width: 14rem;
+      height: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  .card-content {
+    margin-top: $space-2;
+    width: 100%;
+
+    .podcast-info {
+      .podcast-channel {
+        @include pl;
+        margin-bottom: $space-1;
+      }
+
+      .podcast-title {
+        @include h2;
+        margin-bottom: $space-3;
+      }
+      .podcast-details {
+        width: 100%;
+        @include flex(row, center);
+        color: $gray-1;
+
+        @include tabScreen {
+          width: 32%;
+        }
+        .time-released {
+          @include pl;
+          margin-right: $space-2;
+        }
+
+        .duration {
+          @include plb;
+        }
+      }
+    }
+
+    .play-button {
+      display: none;
+      margin-left: auto;
     }
   }
 }

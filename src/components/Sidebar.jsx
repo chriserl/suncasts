@@ -1,9 +1,8 @@
 import React from "react";
 import "../sass/components/sidebar.scss";
-import playIcon from "../assets/icons/play.svg";
-import forwardIcon from "../assets/icons/forwardicon.svg";
-import backwardIcon from "../assets/icons/backwardicon.svg";
 import closeIcon from "../assets/icons/close.svg";
+import accIcon from "../assets/icons/account.svg";
+import googleIcon from "../assets/icons/google.svg";
 
 const Sidebar = (props) => {
   return (
@@ -16,47 +15,29 @@ const Sidebar = (props) => {
           Suncasts.
         </a>
       </nav>
-      <section className="playlist">
-        <p className="section-title">Playlist</p>
-        <ul className="playlist-items">
-          <li className="playlist-item">
-            <p>Select any episode to play</p>
-          </li>
-        </ul>
-      </section>
-      <section className="player-area">
-        <div className="podcast-player">
-          <p className="episode-name">Inheritance in CSS</p>
-          <p className="channel-name">The CSS Podcast</p>
-          <p className="time-remaining">28mins left</p>
-          <hr />
-          <audio src="./"></audio>
-          <div className="audio-controls">
-            <button className="backward-btn">
-              <img
-                src={forwardIcon}
-                className="control-icon backward"
-                alt="backward"
-              />
-            </button>
-            <button className="play-btn">
-              <img
-                src={playIcon}
-                className="control-icon play-icon"
-                alt="play"
-              />
-            </button>
-            <button className="forward-btn">
-              <img
-                src={backwardIcon}
-                className="control-icon forward"
-                alt="forward"
-              />
-            </button>
-          </div>
-        </div>
-      </section>
+      <AccountPrompt />
     </aside>
+  );
+};
+
+const AccountPrompt = () => {
+  return (
+    <div id="account-prompt">
+      <img
+        src={accIcon}
+        alt="account avatar"
+        loading="lazy"
+        className="account-icon"
+      />
+      <div className="login-text">
+        <p className="login-prompt">You're not logged in</p>
+        <p className="login-aux">Sign in to get personalized content</p>
+      </div>
+      <button className="login-btn icon-btn">
+        <img src={googleIcon} alt="google" className="btn-icon" />
+        Sign in
+      </button>
+    </div>
   );
 };
 

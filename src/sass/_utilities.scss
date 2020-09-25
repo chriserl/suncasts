@@ -1,11 +1,16 @@
 //Fonts
 @mixin h1 {
   font-size: calc(#{$base-fontSize} * 2.4);
+  font-family: PoppinsBold;
+}
+
+@mixin h2 {
+  font-size: calc(#{$base-fontSize} * 2);
   font-family: PoppinsSemiBold;
 }
 
 @mixin h3 {
-  font-size: calc(#{$base-fontSize} * 1.32);
+  font-size: calc(#{$base-fontSize} * 1.6);
   font-family: PoppinsSemiBold;
 }
 
@@ -15,43 +20,43 @@
 }
 
 @mixin ph {
-  font-size: calc(#{$base-fontSize} * 1.08);
-  font-family: PoppinsReg;
+  font-size: calc(#{$base-fontSize} * 1.16);
+  font-family: PoppinsMed;
 }
 
 @mixin phb {
   font-size: calc(#{$base-fontSize} * 1.08);
-  font-family: PoppinsMed;
+  font-family: IBMMed;
 }
 
 @mixin pl {
   font-size: $base-fontSize;
-  font-family: PoppinsReg;
+  font-family: IBMReg;
 }
 
 @mixin plb {
   font-size: $base-fontSize;
-  font-family: PoppinsMed;
+  font-family: IBMMed;
 }
 
 @mixin ps {
   font-size: calc(#{$base-fontSize} * 0.88);
-  font-family: PoppinsReg;
+  font-family: IBMReg;
 }
 
 @mixin psb {
   font-size: calc(#{$base-fontSize} * 0.88);
-  font-family: PoppinsMed;
+  font-family: IBMSemiBold;
 }
 
 @mixin px {
   font-size: calc(#{$base-fontSize} * 0.8);
-  font-family: PoppinsReg;
+  font-family: IBMReg;
 }
 
 @mixin pxb {
   font-size: calc(#{$base-fontSize} * 0.8);
-  font-family: PoppinsMed;
+  font-family: IBMMed;
 }
 
 //Roboto
@@ -69,7 +74,7 @@
 }
 
 //Display none
-@mixin dNone {
+@mixin d-none {
   display: none;
 }
 

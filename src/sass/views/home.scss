@@ -20,13 +20,16 @@
     }
 
     form {
+      @include d-none;
       width: 100%;
       margin-left: auto;
       margin-right: $space-1;
+      margin-top: $space-4;
 
       @include tabScreen {
-        width: 32%;
+        width: 28%;
         margin-right: $space-8;
+        display: block;
       }
 
       input {
@@ -35,52 +38,13 @@
     }
   }
 
-  .intro-texts {
-    margin-bottom: $space-10;
+  .featured-podcast {
+    margin-top: $space-10;
+    margin-bottom: 5.6rem;
 
-    .main-text {
-      @include Rh1;
-      margin-bottom: $space-1;
-
-      span {
-        color: $gray-1;
-      }
-    }
-
-    .aux-main {
-      @include pl;
-      color: $gray-3;
-    }
-  }
-
-  .channels {
-    width: 100%;
-    display: flex;
-    overflow-y: hidden;
-    overflow-x: scroll;
-    margin-top: 4.8rem;
-    @include hideScrollbar;
-
-    .channel-item {
-      margin-right: $space-4;
-      list-style-type: none;
-
-      img {
-        width: 12rem;
-        height: 16.4rem;
-        border-radius: $space-2;
-        border: 1.64px solid $border-gray;
-      }
-    }
-
-    .link-item {
-      @include ps;
-      margin: auto 0 $space-4 0;
-
-      a {
-        text-decoration: none;
-        color: $prim-color;
-      }
+    @include laptopSmall {
+      margin-top: $space-2;
+      width: 80%;
     }
   }
 }
