@@ -3,53 +3,53 @@
 @import "../utilities";
 
 .sidebar {
-  position: fixed;
-  z-index: 1;
-  background-color: #ffffff;
-  height: 100%;
-  overflow-y: scroll;
-  width: 80%;
-  border-right: 1.6px solid #dbdbdb;
-  @include flex(column);
-  @include hideScrollbar;
-  @include phoneLg {
-    width: 72%;
-  }
-  @include tabScreen {
-    width: 16rem;
-  }
+	position: fixed;
+	z-index: 1;
+	background-color: #ffffff;
+	height: 100%;
+	overflow-y: scroll;
+	width: 80%;
+	border-right: 1.6px solid #dbdbdb;
+	@include flex(column);
+	@include hideScrollbar;
+	@include phoneLg {
+		width: 72%;
+	}
+	@include tabScreen {
+		width: 16rem;
+	}
 
-  nav {
-    margin-top: $space-5;
-    width: 100%;
-    text-align: center;
+	nav {
+		margin-top: $spacing-6;
+		width: 100%;
+		text-align: center;
 
-    .close-btn {
-      display: block;
-      margin: 0 $space-3 $space-1 auto;
+		.close-btn {
+			display: block;
+			margin: 0 $space-3 $space-1 auto;
 
-      @include tabScreen {
-        @include d-none;
-      }
-    }
+			@include tabScreen {
+				@include d-none;
+			}
+		}
 
-    .brand {
-      @include h3;
-      text-decoration: none;
-      color: $prim-color;
-    }
-  }
+		.brand {
+			@include h3;
+			text-decoration: none;
+			color: $prim-color;
+		}
+	}
 
-  .player-area {
-    width: 92%;
-    margin: auto auto $space-6 auto;
-  }
+	.player-area {
+		width: 92%;
+		margin: auto auto $space-6 auto;
+	}
 }
 
 .sidenav-closed {
-  @include d-none;
+	@include d-none;
 
-  @include tabScreen {
-    display: flex;
-  }
+	@include tabScreen {
+		display: flex;
+	}
 }

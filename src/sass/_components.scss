@@ -1,160 +1,165 @@
 //Brand
 .brand {
-  @include h4;
-  text-decoration: none;
-  color: $prim-color;
+	@include h4;
+	text-decoration: none;
+	color: $prim-color;
 }
 
 #account-prompt {
-  width: 80%;
-  margin: $space-9 auto 0;
-  @include flex(column, center);
+	width: 80%;
+	margin: $space-9 auto 0;
+	@include flex(column, center);
 
-  .login-text {
-    text-align: center;
-    margin-top: $space-3;
-    margin-bottom: $space-6;
+	.login-text {
+		text-align: center;
+		margin-top: $space-3;
+		margin-bottom: $space-6;
 
-    .login-prompt {
-      @include pl;
-      margin-bottom: $space-2;
-      color: $black;
-    }
+		.login-prompt {
+			@include pl;
+			margin-bottom: $space-2;
+			color: $black;
+		}
 
-    .login-aux {
-      @include ps;
-      color: $gray-1;
-    }
-  }
+		.login-aux {
+			@include ps;
+			color: $gray-1;
+		}
+	}
 
-  .login-btn {
-    cursor: pointer;
-    border-radius: $space-3;
-    padding: $space-1 $space-3;
+	.login-btn {
+		cursor: pointer;
+		border-radius: $space-3;
+		padding: $space-1 $space-3;
 
-    img {
-      margin-right: $space-1;
-    }
-  }
+		img {
+			margin-right: $space-1;
+		}
+	}
 }
 
 //Buttons
 .icon-btn {
-  @include flex(row, center);
-  @include button-plain;
-  background-color: $gray-4;
+	@include flex(row, center);
+	@include button-plain;
+	background-color: $gray-4;
 
-  img {
-    width: $space-4;
-    display: block;
-  }
+	img {
+		width: $space-4;
+		display: block;
+	}
 }
 
 .hamburger-btn {
-  @include flex(row, center);
-  @include button-plain;
+	@include flex(row, center);
+	@include button-plain;
 
-  .hamburger-icon {
-    width: 1.16rem;
-  }
+	.hamburger-icon {
+		width: 1.16rem;
+	}
 }
 
 //Searchbar
 .form-control {
-  .searchBar {
-    @include ps;
-    border-radius: $space-1;
-    background-color: #f4f7f2;
-    padding: 0.8rem $base-spaceSize;
-    width: 100%;
-    border: none;
-    margin-left: $space-1;
-    color: $black;
+	.searchBar {
+		@include ps;
+		border-radius: $space-1;
+		background-color: #f4f7f2;
+		padding: 0.8rem $base-spaceSize;
+		width: 100%;
+		border: none;
+		margin-left: $space-1;
+		color: $black;
 
-    &:focus {
-      outline: none;
-      //outline-color: #94ac80;
-      background-color: white;
-    }
+		&:focus {
+			outline: none;
+			//outline-color: #94ac80;
+			background-color: white;
+		}
 
-    &::-webkit-input-placeholder {
-      @include ps;
-      color: #94ac80;
-    }
+		&::-webkit-input-placeholder {
+			@include ps;
+			color: #94ac80;
+		}
 
-    &:-ms-input-placeholder {
-      @include ps;
-      color: #94ac80;
-    }
+		&:-ms-input-placeholder {
+			@include ps;
+			color: #94ac80;
+		}
 
-    &::-ms-input-placeholder {
-      @include ps;
-      color: #94ac80;
-    }
+		&::-ms-input-placeholder {
+			@include ps;
+			color: #94ac80;
+		}
 
-    &::placeholder {
-      @include ps;
-      color: #94ac80;
-    }
-  }
+		&::-moz-placeholder {
+			@include ps;
+			color: #94ac80;
+		}
+
+		&::placeholder {
+			@include ps;
+			color: #94ac80;
+		}
+	}
 }
 
 .featured-podcast {
-  @include tabScreen {
-    @include flex(row, flex-start);
-  }
-  width: 100%;
+	@include tabScreen {
+		@include flex(row, flex-start);
+	}
+	width: 100%;
 
-  img {
-    width: 100%;
-    height: 14rem;
-    border-radius: $space-4;
-    margin-bottom: $space-4;
+	img {
+		width: 100%;
+		height: 14rem;
+		border-radius: $space-4;
+		margin-bottom: $space-4;
 
-    @include tabScreen {
-      margin-right: $space-6;
-      width: 14rem;
-      height: auto;
-      margin-bottom: 0;
-    }
-  }
+		@include tabScreen {
+			margin-right: $space-6;
+			width: 14rem;
+			height: auto;
+			margin-bottom: 0;
+		}
+	}
 
-  .card-content {
-    margin-top: $space-2;
-    width: 100%;
+	.card-content {
+		margin-top: $space-2;
+		width: 100%;
 
-    .podcast-info {
-      .podcast-channel {
-        @include pl;
-        margin-bottom: $space-1;
-      }
+		.podcast-info {
+			.podcast-channel {
+				@include ph;
+				margin-bottom: $space-1;
+			}
 
-      .podcast-title {
-        @include h2;
-        margin-bottom: $space-3;
-      }
-      .podcast-details {
-        width: 100%;
-        @include flex(row, center);
-        color: $gray-1;
+			.podcast-title {
+				@include h2;
+				margin-bottom: $space-3;
+			}
+			.podcast-details {
+				width: 100%;
+				@include flex(row, center);
+				color: $gray-1;
 
-        @include tabScreen {
-          width: 32%;
-        }
-        .time-released {
-          @include pl;
-          margin-right: $space-2;
-        }
+				@include tabScreen {
+					width: 32%;
+				}
+				.time-released {
+					@include pl;
+					margin-right: $space-2;
+				}
 
-        .duration {
-          @include plb;
-        }
-      }
-    }
+				.duration {
+					@include plb;
+				}
+			}
+		}
 
-    .play-button {
-      display: none;
-      margin-left: auto;
-    }
-  }
+		.play-button {
+			display: none;
+			margin-left: auto;
+		}
+	}
 }

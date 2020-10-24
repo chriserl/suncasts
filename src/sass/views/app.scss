@@ -3,19 +3,19 @@
 @import "../utilities";
 
 .app {
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  background-color: #fdfdfd;
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background-color: hsl(100%, 100%, 99%);
 
-  main {
-    margin: $space-3 $base-spaceSize;
+	main {
+		margin: $space-3 $base-spaceSize;
 
-    @include tabScreen {
-      width: calc(100vw - 21.4rem);
-      margin: $space-3 $base-spaceSize;
-      margin-left: auto;
-    }
-  }
+		@include tabScreen {
+			width: calc(100vw - 21.4rem);
+			margin: $space-3 $base-spaceSize;
+			margin-left: auto;
+		}
+	}
 }

@@ -1,130 +1,187 @@
 //Fonts
 @mixin h1 {
-  font-size: calc(#{$base-fontSize} * 2.4);
-  font-family: PoppinsBold;
+	font-size: calc(#{$base-fontSize} * 2.4);
+	font-family: PoppinsBold;
 }
 
 @mixin h2 {
-  font-size: calc(#{$base-fontSize} * 2);
-  font-family: PoppinsSemiBold;
+	font-size: calc(#{$base-fontSize} * 2);
+	font-family: PoppinsSemiBold;
 }
 
 @mixin h3 {
-  font-size: calc(#{$base-fontSize} * 1.6);
-  font-family: PoppinsSemiBold;
+	font-size: calc(#{$base-fontSize} * 1.6);
+	font-family: PoppinsSemiBold;
 }
 
 @mixin h4 {
-  font-size: calc(#{$base-fontSize} * 1.24);
-  font-family: PoppinsSemiBold;
+	font-size: calc(#{$base-fontSize} * 1.24);
+	font-family: PoppinsSemiBold;
 }
 
 @mixin ph {
-  font-size: calc(#{$base-fontSize} * 1.16);
-  font-family: PoppinsMed;
+	font-size: calc(#{$base-fontSize} * 1.16);
+	font-family: PoppinsMed;
 }
 
 @mixin phb {
-  font-size: calc(#{$base-fontSize} * 1.08);
-  font-family: IBMMed;
+	font-size: calc(#{$base-fontSize} * 1.08);
+	font-family: IBMMed;
 }
 
 @mixin pl {
-  font-size: $base-fontSize;
-  font-family: IBMReg;
+	font-size: $base-fontSize;
+	font-family: IBMReg;
 }
 
 @mixin plb {
-  font-size: $base-fontSize;
-  font-family: IBMMed;
+	font-size: $base-fontSize;
+	font-family: IBMMed;
 }
 
 @mixin ps {
-  font-size: calc(#{$base-fontSize} * 0.88);
-  font-family: IBMReg;
+	font-size: calc(#{$base-fontSize} * 0.88);
+	font-family: IBMReg;
 }
 
 @mixin psb {
-  font-size: calc(#{$base-fontSize} * 0.88);
-  font-family: IBMSemiBold;
+	font-size: calc(#{$base-fontSize} * 0.88);
+	font-family: IBMSemiBold;
 }
 
 @mixin px {
-  font-size: calc(#{$base-fontSize} * 0.8);
-  font-family: IBMReg;
+	font-size: calc(#{$base-fontSize} * 0.8);
+	font-family: IBMReg;
 }
 
 @mixin pxb {
-  font-size: calc(#{$base-fontSize} * 0.8);
-  font-family: IBMMed;
+	font-size: calc(#{$base-fontSize} * 0.8);
+	font-family: IBMMed;
 }
 
 //Roboto
 @mixin Rh1 {
-  font-size: calc(#{$base-fontSize} * 2);
-  font-family: RobotoSemiBold;
+	font-size: calc(#{$base-fontSize} * 2);
+	font-family: RobotoSemiBold;
+}
+
+.h1 {
+	font-size: 1.96rem;
+	font-family: PoppinsBold;
+}
+
+.h2 {
+	font-size: 1.72rem;
+	font-family: PoppinsBold;
+}
+
+.h3 {
+	font-size: 1.56rem;
+	font-family: PoppinsBold;
+}
+
+.h4 {
+	font-size: 1.4rem;
+	font-family: PoppinsBold;
+}
+
+.ph {
+	font-size: 1.24rem;
+	font-family: PoppinsMedium;
+}
+
+.phb {
+	@extend .ph;
+	font-family: PoppinsBold;
+}
+
+.pl {
+	font-size: 1rem;
+}
+
+.plb {
+	@extend .pl;
+	font-family: PoppinsSemiBold;
+}
+
+.ps {
+	font-size: 0.88rem;
+}
+
+.psb {
+	@extend .ps;
+	font-family: PoppinsMedium;
+}
+
+.px {
+	font-size: 0.8rem;
+}
+
+.pxb {
+	@extend .px;
+	font-family: PoppinsMedium;
 }
 
 //Flexbox
 @mixin flex($direction: null, $align-items: null, $justify-content: null) {
-  display: flex;
-  flex-direction: $direction;
-  align-items: $align-items;
-  justify-content: $justify-content;
+	display: flex;
+	flex-direction: $direction;
+	align-items: $align-items;
+	justify-content: $justify-content;
 }
 
 //Display none
 @mixin d-none {
-  display: none;
+	display: none;
 }
 
 //Border
 @mixin lightBorder {
-  border: 1.24px solid #dbdbdb;
+	border: 1.24px solid #dbdbdb;
 }
 
 //Media Queries
 
 //Big Smartphone devices
 @mixin phoneLg {
-  @media screen and (min-width: 414px) {
-    @content;
-  }
+	@media screen and (min-width: 414px) {
+		@content;
+	}
 }
 
 //Tablet devices
 @mixin tabScreen {
-  @media screen and (min-width: 600px) {
-    @content;
-  }
+	@media screen and (min-width: 600px) {
+		@content;
+	}
 }
 
 //Small screen laptops
 @mixin laptopSmall {
-  @media screen and (min-width: 1024px) {
-    @content;
-  }
+	@media screen and (min-width: 1024px) {
+		@content;
+	}
 }
 
 //Large screen laptops
 @mixin laptopLarge {
-  @media screen and (min-width: 1440px) {
-    @content;
-  }
+	@media screen and (min-width: 1440px) {
+		@content;
+	}
 }
 
 //Hide Scrollbar
 @mixin hideScrollbar {
-  scrollbar-width: none;
-  overflow: -moz-scrollbars-none;
-  -ms-overflow-style: none;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+	scrollbar-width: none;
+	overflow: -moz-scrollbars-none;
+	-ms-overflow-style: none;
+	&::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 //Button
 @mixin button-plain {
-  border: none;
-  background: transparent;
+	border: none;
+	background: transparent;
 }
