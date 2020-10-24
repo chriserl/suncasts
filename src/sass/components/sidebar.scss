@@ -11,45 +11,62 @@
 	width: 80%;
 	border-right: 1.6px solid #dbdbdb;
 	@include flex(column);
-	@include hideScrollbar;
-	@include phoneLg {
+	@include hide-scrollbar;
+	@include phone-lg {
 		width: 72%;
 	}
-	@include tabScreen {
+	@include tab-screen {
 		width: 16rem;
 	}
 
 	nav {
-		margin-top: $spacing-6;
-		width: 100%;
-		text-align: center;
+		@include flex($justify: space-between);
+		width: 80%;
+		margin: $spacing-7 $spacing-5 0 auto;
 
 		.close-btn {
 			display: block;
-			margin: 0 $space-3 $space-1 auto;
+		}
 
-			@include tabScreen {
+		@include tab-screen {
+			width: max-content;
+			margin: $spacing-7 auto 0;
+
+			.close-btn {
 				@include d-none;
 			}
 		}
 
 		.brand {
-			@include h3;
 			text-decoration: none;
-			color: $prim-color;
 		}
 	}
 
-	.player-area {
-		width: 92%;
-		margin: auto auto $space-6 auto;
+	#account-prompt {
+		width: 80%;
+		margin: $spacing-12 auto 0;
+		@include flex(column, center);
+
+		.user-avatar {
+			font-size: 7.2rem;
+			margin-bottom: $spacing-6;
+		}
+
+		.login-text {
+			text-align: center;
+			margin-top: $spacing-6;
+
+			.login-prompt {
+				margin-bottom: $space-2;
+			}
+		}
 	}
 }
 
 .sidenav-closed {
 	@include d-none;
 
-	@include tabScreen {
+	@include tab-screen {
 		display: flex;
 	}
 }

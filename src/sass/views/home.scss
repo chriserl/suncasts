@@ -3,48 +3,48 @@
 @import "../utilities";
 
 #home {
-  width: 100%;
+	width: 100%;
 
-  .nav {
-    width: 100%;
-    margin-bottom: $space-7;
+	.nav {
+		width: 100%;
+		margin-bottom: $space-7;
 
-    .nav-header {
-      @include flex(row, center, space-between);
-      width: 100%;
-      margin-bottom: $space-4;
+		.nav-header {
+			@include flex(row, center, space-between);
+			width: 100%;
+			margin-bottom: $space-4;
 
-      @include tabScreen {
-        display: none;
-      }
-    }
+			@include tab-screen {
+				display: none;
+			}
+		}
 
-    form {
-      @include d-none;
-      width: 100%;
-      margin-left: auto;
-      margin-right: $space-1;
-      margin-top: $space-4;
+		form {
+			@include d-none;
+			width: 100%;
+			margin-left: auto;
+			margin-right: $space-1;
+			margin-top: $space-4;
 
-      @include tabScreen {
-        width: 28%;
-        margin-right: $space-8;
-        display: block;
-      }
+			@include tab-screen {
+				width: 28%;
+				margin-right: $space-8;
+				display: block;
+			}
 
-      input {
-        width: 100%;
-      }
-    }
-  }
+			input {
+				width: 100%;
+			}
+		}
+	}
 
-  .featured-podcast {
-    margin-top: $space-10;
-    margin-bottom: 5.6rem;
+	.featured-podcast {
+		margin-top: $space-10;
+		margin-bottom: 5.6rem;
 
-    @include laptopSmall {
-      margin-top: $space-2;
-      width: 80%;
-    }
-  }
+		@include laptop-small {
+			margin-top: $space-2;
+			width: 80%;
+		}
+	}
 }

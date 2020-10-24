@@ -1,62 +1,17 @@
-//Brand
-.brand {
-	@include h4;
-	text-decoration: none;
-	color: $prim-color;
+//Icons
+.small-icon {
+	font-size: 1.14rem;
+	padding: 0.12rem;
 }
 
-#account-prompt {
-	width: 80%;
-	margin: $space-9 auto 0;
-	@include flex(column, center);
-
-	.login-text {
-		text-align: center;
-		margin-top: $space-3;
-		margin-bottom: $space-6;
-
-		.login-prompt {
-			@include pl;
-			margin-bottom: $space-2;
-			color: $black;
-		}
-
-		.login-aux {
-			@include ps;
-			color: $gray-1;
-		}
-	}
-
-	.login-btn {
-		cursor: pointer;
-		border-radius: $space-3;
-		padding: $space-1 $space-3;
-
-		img {
-			margin-right: $space-1;
-		}
-	}
+.regular-icon {
+	font-size: 1.32rem;
+	padding: 0.12rem;
 }
 
-//Buttons
-.icon-btn {
-	@include flex(row, center);
-	@include button-plain;
-	background-color: $gray-4;
-
-	img {
-		width: $space-4;
-		display: block;
-	}
-}
-
-.hamburger-btn {
-	@include flex(row, center);
-	@include button-plain;
-
-	.hamburger-icon {
-		width: 1.16rem;
-	}
+.large-icon {
+	font-size: 1.6rem;
+	padding: 0.12rem;
 }
 
 //Searchbar
@@ -105,7 +60,7 @@
 }
 
 .featured-podcast {
-	@include tabScreen {
+	@include tab-screen {
 		@include flex(row, flex-start);
 	}
 	width: 100%;
@@ -116,7 +71,7 @@
 		border-radius: $space-4;
 		margin-bottom: $space-4;
 
-		@include tabScreen {
+		@include tab-screen {
 			margin-right: $space-6;
 			width: 14rem;
 			height: auto;
@@ -143,7 +98,7 @@
 				@include flex(row, center);
 				color: $gray-1;
 
-				@include tabScreen {
+				@include tab-screen {
 					width: 32%;
 				}
 				.time-released {

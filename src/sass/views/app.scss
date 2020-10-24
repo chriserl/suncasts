@@ -12,7 +12,7 @@
 	main {
 		margin: $space-3 $base-spaceSize;
 
-		@include tabScreen {
+		@include tab-screen {
 			width: calc(100vw - 21.4rem);
 			margin: $space-3 $base-spaceSize;
 			margin-left: auto;

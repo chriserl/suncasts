@@ -123,11 +123,11 @@
 }
 
 //Flexbox
-@mixin flex($direction: null, $align-items: null, $justify-content: null) {
+@mixin flex($direction: row, $align: center, $justify: null) {
 	display: flex;
 	flex-direction: $direction;
-	align-items: $align-items;
-	justify-content: $justify-content;
+	align-items: $align;
+	justify-content: $justify;
 }
 
 //Display none
@@ -135,53 +135,42 @@
 	display: none;
 }
 
-//Border
-@mixin lightBorder {
-	border: 1.24px solid #dbdbdb;
-}
-
 //Media Queries
 
 //Big Smartphone devices
-@mixin phoneLg {
+@mixin phone-lg {
 	@media screen and (min-width: 414px) {
 		@content;
 	}
 }
 
 //Tablet devices
-@mixin tabScreen {
+@mixin tab-screen {
 	@media screen and (min-width: 600px) {
 		@content;
 	}
 }
 
 //Small screen laptops
-@mixin laptopSmall {
+@mixin laptop-small {
 	@media screen and (min-width: 1024px) {
 		@content;
 	}
 }
 
 //Large screen laptops
-@mixin laptopLarge {
+@mixin laptop-large {
 	@media screen and (min-width: 1440px) {
 		@content;
 	}
 }
 
 //Hide Scrollbar
-@mixin hideScrollbar {
+@mixin hide-scrollbar {
 	scrollbar-width: none;
 	overflow: -moz-scrollbars-none;
 	-ms-overflow-style: none;
 	&::-webkit-scrollbar {
 		display: none;
 	}
-}
-
-//Button
-@mixin button-plain {
-	border: none;
-	background: transparent;
 }

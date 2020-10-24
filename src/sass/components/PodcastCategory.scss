@@ -15,7 +15,7 @@
 	.podcasts {
 		@include flex(row, center, space-between);
 		overflow-x: scroll;
-		@include hideScrollbar;
+		@include hide-scrollbar;
 
 		.podcast-item {
 			min-width: 280px;
