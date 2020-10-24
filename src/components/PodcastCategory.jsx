@@ -37,12 +37,12 @@ let pods = [
 const PodcastCategory = () => {
 	return (
 		<div className="podcast-category">
-			<p className="category-title">This week</p>
+			<p className="category-title ph">This week</p>
 			<ul className="podcasts">
 				{pods.map((pod) => (
 					<li className="podcast-item">
 						<div className="podcast">
-							<p className="podcast-title plb">{pod.title}</p>
+							<p className="podcast-title psb">{pod.title}</p>
 							<div className="podcast-details">
 								<img
 									src={pod.channelImage}
@@ -56,7 +56,9 @@ const PodcastCategory = () => {
 											<p className="time-released px">{pod.timeReleased}</p>
 											<p className="duration px">{pod.duration}</p>
 										</div>
-										<img src={options} alt="options" className="options-icon" />
+										<button className="play-button icon-button">
+											<span class="material-icons">play_arrow</span>
+										</button>
 									</div>
 								</div>
 							</div>

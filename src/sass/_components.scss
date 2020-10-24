@@ -1,4 +1,9 @@
 //Icons
+.xsmall-icon {
+	font-size: 1rem;
+	padding: 0.12rem;
+}
+
 .small-icon {
 	font-size: 1.14rem;
 	padding: 0.12rem;
@@ -14,47 +19,56 @@
 	padding: 0.12rem;
 }
 
+//Buttons
+.icon-button {
+	@extend .small-icon;
+	@include flex;
+	background: hsl(249, 100%, 48%);
+	color: white;
+	border-radius: $spacing-4;
+	padding: 0.48rem;
+	transition: all 0.25s ease;
+
+	&:hover {
+		box-shadow: 2px 6px 16px hsl(249, 100%, 84%);
+	}
+}
+
 //Searchbar
-.form-control {
-	.searchBar {
-		@include ps;
-		border-radius: $space-1;
-		background-color: #f4f7f2;
-		padding: 0.8rem $base-spaceSize;
-		width: 100%;
-		border: none;
-		margin-left: $space-1;
-		color: $black;
+.search-form {
+	@include flex;
 
-		&:focus {
-			outline: none;
-			//outline-color: #94ac80;
-			background-color: white;
+	.form-control {
+		@include flex;
+		padding: $spacing-1 $spacing-2;
+		padding-left: $spacing-6;
+		background: hsl(0, 0%, 94%);
+		color: hsl(0, 0%, 56%);
+		border-radius: $spacing-4;
+		transition: all 0.25s ease;
+
+		.search-input {
+			@extend .ps;
+			width: 100%;
+			border: none;
+			color: hsl(0, 0%, 12%);
+			background: transparent;
+			margin-left: $spacing-1;
+
+			&:focus {
+				outline: none;
+			}
+
+			&::placeholder {
+				@extend .px;
+				color: hsl(0, 0%, 56%);
+			}
 		}
 
-		&::-webkit-input-placeholder {
-			@include ps;
-			color: #94ac80;
-		}
-
-		&:-ms-input-placeholder {
-			@include ps;
-			color: #94ac80;
-		}
-
-		&::-ms-input-placeholder {
-			@include ps;
-			color: #94ac80;
-		}
-
-		&::-moz-placeholder {
-			@include ps;
-			color: #94ac80;
-		}
-
-		&::placeholder {
-			@include ps;
-			color: #94ac80;
+		&:focus-within {
+			.search-button {
+				box-shadow: 2px 6px 16px hsl(249, 100%, 84%);
+			}
 		}
 	}
 }

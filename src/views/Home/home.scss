@@ -1,0 +1,70 @@
+//imports
+@import "../../sass/variables";
+@import "../../sass/utilities";
+
+#home {
+	width: 100%;
+
+	.nav {
+		@include flex($justify: space-between);
+		flex-wrap: wrap;
+		width: 100%;
+		margin-bottom: $spacing-14;
+
+		.nav-header {
+			@include flex($justify: space-between);
+			width: 100%;
+			margin-bottom: $spacing-7;
+
+			@include tab-screen {
+				@include d-none;
+			}
+		}
+
+		form {
+			width: 100%;
+
+			@include tab-screen {
+				width: 28%;
+				margin-right: $spacing-12;
+				margin-left: auto;
+
+				@include tab-screen {
+					margin-left: 0;
+					order: 1;
+				}
+			}
+		}
+
+		.page-title {
+			margin-top: $spacing-8;
+			margin-left: $spacing-1;
+
+			@include tab-screen {
+				margin: 0;
+			}
+		}
+	}
+
+	.featured-channels {
+		width: 100%;
+		margin-bottom: $spacing-12;
+
+		.content-slider {
+			width: 100%;
+			padding-bottom: 4rem;
+			overflow-x: scroll;
+			overflow-y: hidden;
+			@include hide-scrollbar;
+
+			.content-list {
+				width: max-content;
+				@include flex;
+
+				.channel-item {
+					margin-right: $spacing-8;
+				}
+			}
+		}
+	}
+}

@@ -1,6 +1,6 @@
 //imports
-@import "../variables";
-@import "../utilities";
+@import "../../sass/variables";
+@import "../../sass/utilities";
 
 .sidebar {
 	position: fixed;
@@ -35,10 +35,6 @@
 			.close-btn {
 				@include d-none;
 			}
-		}
-
-		.brand {
-			text-decoration: none;
 		}
 	}
 
